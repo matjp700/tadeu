@@ -6,7 +6,8 @@ body {
     max-height: 100%;
     margin: 0;
     background: linear-gradient(50deg,purple , #1C92C4 , #1C9260);
-    background-size: 1920px 1080px;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -207,8 +208,7 @@ footer a {
 }
 @media screen and (max-width: 749px) {
     main .box-email {
-        transform: translateX(160%);
-
+        display: none;
     }
     header ul li .boxemail{
         display: flex;
@@ -221,11 +221,6 @@ footer a {
     }
     main .titulo_historia {
         width: 100%;
-    }
-}
-@media screen and (max-width: 460px) {
-    main {
-        height: 61%;
     }
 }
 @media screen and (max-width: 648px) {
@@ -241,5 +236,14 @@ footer a {
     }
     header ul li {
         transform: translateX(-42px);
+    }
+    main {
+        width: 95vw;
+        left: 0%;
+    }
+}
+@media screen and (max-width: 460px) {
+    main {
+        height: 61%;
     }
 }
