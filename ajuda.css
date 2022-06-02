@@ -1,0 +1,232 @@
+* {
+    transition: 2s ease-in-out;
+}
+body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    background: linear-gradient(50deg,purple , #1C92C4 , #1C9260);
+    background-size: 1920px 1080px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+header {
+    width: 100%;
+    max-height: 150px;
+    height: 150px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.753);
+    justify-content: space-between;
+}
+header ul li .boxemail{
+    display: flex;
+    position: fixed;
+    right: 15px;
+    top: -40px;
+}
+header a {
+    display: flex;
+    text-decoration: none;
+}
+header a h1 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 35px;
+    margin-left: 3px;
+}
+header img {
+    width: 100px;
+    margin-top: 10px;
+    height: 80px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul li {
+    padding: 5px;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #97D07E;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.753);
+}
+header ul li a:hover {
+    background-color: #1C9E75;
+    cursor: pointer;
+}
+header ul li .boxemail {
+    background-color: #1C9E75;
+}
+main {
+    text-align: center;
+    width: 500px;
+    left: 35%;
+    position: fixed;
+    height: 60%;
+    max-height: 75%;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.747);
+    padding: 10px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+}
+main h3 {
+    color: white;
+}
+main .box-email {
+    width: 300px;
+    height: 400px;
+    background-color: #1C9E75;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.747);
+}
+main .box-email p {
+    color: rgba(0, 0, 0, 0.808);
+    position: relative;
+    margin-top: 30px;
+}
+main .box-email input {
+    margin-top: 20px;
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    width: 250px;
+    color: black;
+    border-radius: 3px;
+}
+main .box-email input::placeholder {
+    color: black;
+}
+main .box-email input:hover {
+    background-image: linear-gradient(90deg,rgba(128, 0, 128, 0.685) , #1c92c4a9 , rgba(0, 128, 0, 0.726));
+}
+main .box-email .enviar {
+    width: 100px;
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+main .box-email .enviar:hover {
+    cursor: pointer;
+    background-image: linear-gradient(90deg,rgba(128, 0, 128, 0.685) , #1c92c4a9 , rgba(0, 128, 0, 0.726));
+}
+main .box-email a {
+    text-decoration: none;
+    padding: 2px;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+}
+main .box-email a:hover {
+    background-image: linear-gradient(90deg,rgba(128, 0, 128, 0.685) , #1c92c4a9 , rgba(0, 128, 0, 0.726));
+}
+
+footer {
+    bottom: 0px;
+    background-image: linear-gradient(55deg,purple , #1C92C4, #1c92c46b, rgba(0, 128, 0, 0.226) );
+    position: fixed;
+    text-align: center;
+    border-top: 2px solid black;
+    width: 100%;
+    max-height: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 1024px) {
+    main {
+        left: 25%;
+    }
+}
+@media screen and (max-width: 749px) {
+    main {
+        left: 15%;
+    }
+}
+@media screen and (max-width: 616px) {
+    main {
+        left: 10%;
+    }
+}
+@media screen and (max-width: 580px) {
+    main {
+        left: 5%;
+    }
+}
+@media screen and (max-width: 558px) {
+    main {
+        left: 2%;
+    }
+}
+@media screen and (max-width: 536px) {
+    main {
+        left: 1%;
+    }
+}
+@media screen and (max-width: 531px) {
+    main {
+        left: 17%;
+        width: 300px;
+        height: 65%;
+    }
+}
+@media screen and (max-width: 460px) {
+    main {
+        height: 60%;
+    }
+}
+@media screen and (max-height: 568px) {
+    main {
+        height: 55%;
+    }
+    main .box-email {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 648px) {
+    header img {
+        display: none;
+    }
+    header {
+        display: block;
+        justify-content: left;
+    }
+    header a {
+        width: 70px;
+    }
+    header ul li {
+        transform: translateX(-42px);
+    }
+}
